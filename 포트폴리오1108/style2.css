@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+}
+section {
+  padding: 40px;
+  text-align: center;
+}
+section h1 {
+  padding: 20px;
+  width: 250px;
+  border: 1px solid brown;
+  text-align: center;
+  margin-top: 0;
+}
+/* design */
+/* nav */
+nav {
+  text-align: center;
+  padding: 20px;
+  background-color: #d8cfbf;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+nav a {
+  margin: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #fff;
+}
+/* intro */
+.intro {
+  background: url(img/background.png) no-repeat center center / cover;
+  width: 100%;
+  height: 80vh;
+}
+/* about */
+.about-inner {
+  overflow: hidden;
+}
+.my-info {
+  text-align: left;
+  float: left;
+}
+.my-info span {
+  display: block;
+}
+.my-info span img {
+  transform: translateY(8px);
+}
+.call {
+  float: right;
+  text-align: right;
+}
+/* tech */
+.tech {
+  background-color: #f5f2f1;
+}
+/* work */
+.website a {
+  margin-bottom: 100px;
+  display: block;
+}
+.website a em {
+  font-size: 42px;
+  font-style: normal;
+  margin: 10px 0;
+  display: block;
+}
+.website img {
+  width: 40%;
+  height: 500px;
+  border-radius: 20px;
+}
+.widget-inner {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.widget-inner a {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f2f1;
+}
+.widget b {
+  font-size: 24px;
+  display: block;
+  margin: 20px 0;
+}
+.chinsa-info {
+  padding: 20px;
+  border: 1px solid rgb(207, 185, 143);
+  background-color: #ede6c5;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 15px;
+  }
+  nav a {
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  nav a:nth-of-type(3) {
+    display: none;
+  }
+  h1 {
+    margin: auto;
+  }
+  .about-inner .my-info {
+    text-align: center;
+    float: none;
+    margin-top: 40px;
+  }
+  .call p {
+    text-align: center;
+  }
+  .tech {
+    display: none;
+  }
+  .website img {
+    width: 80%;
+    height: 80%;
+  }
+}

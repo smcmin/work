@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "TheJamsil5Bold";
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.skill-progress {
+  width: 500px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.item {
+}
+.item p {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.item p span:nth-of-type(1) {
+  float: left;
+}
+.item p span:nth-of-type(2) {
+  float: right;
+}
+.progress {
+  border: 1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 3px;
+}
+.progress-level {
+  height: 10px;
+  background: linear-gradient(to right, crimson, gold);
+  animation: ani 1s;
+}
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+}

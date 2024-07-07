@@ -1,0 +1,83 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+.frame {
+  width: 600px;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding: 30px;
+  border-radius: 10px;
+}
+.frame h1 {
+  font-size: 48px;
+}
+.frame p {
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+.btns {
+  margin-bottom: 30px;
+}
+.btn {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #fff;
+  width: 180px;
+}
+.btn i {
+  margin-right: 10px;
+}
+.btn.checkout {
+  background-color: dodgerblue;
+  color: #fff;
+}
+.links {
+  font-size: 14px;
+}
+.links span {
+  color: #bbb;
+}
+.links a {
+  color: dodgerblue;
+}
+.links a:before {
+  content: "|";
+  color: #ccc;
+  font-size: 12px;
+  margin: 5px;
+}

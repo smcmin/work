@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "SUITE-Regular";
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  margin: 10px;
+  position: relative;
+  width: 400px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card img {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
+.content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, yellowgreen, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 160px;
+  transition: 0.3s;
+}
+.card:nth-of-type(2) .content {
+  background: linear-gradient(to top, dodgerblue, transparent);
+}
+.card:nth-of-type(3) .content {
+  background: linear-gradient(to top, pink, transparent);
+}
+.content h2 span {
+  display: block;
+  font-size: 14px;
+}
+.card:hover .content {
+  top: 0;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00000029;
+}

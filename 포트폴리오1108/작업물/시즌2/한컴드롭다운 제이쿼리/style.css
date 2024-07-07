@@ -1,0 +1,112 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+section .inner {
+  width: 1150px;
+}
+.item-desc {
+  display: none;
+}
+.items {
+  display: flex;
+  gap: 40px;
+}
+.item {
+  flex: 1;
+}
+.item-list {
+  background-color: blue;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  height: 120px;
+}
+.item:nth-of-type(1) .item-list {
+  background-color: #195fab;
+}
+.item:nth-of-type(2) .item-list {
+  background-color: #5049a9;
+}
+.item:nth-of-type(3) .item-list {
+  background-color: #8c66c1;
+}
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  margin: 3px;
+  margin-top: 10px;
+  width: 80px;
+  display: inline-block;
+}
+.btn.download {
+  width: 200px;
+}
+.item-desc {
+  border: 3px solid #ddd;
+  padding: 5px 15px;
+}
+.item:nth-of-type(1) .item-desc {
+  border-color: #195fab;
+}
+.item:nth-of-type(2) .item-desc {
+  border-color: #5049a9;
+}
+.item:nth-of-type(3) .item-desc {
+  border-color: #8c66c1;
+}
+.item-desc ul,
+.item-desc ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.item-desc ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.item-desc ul li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+/* 밑 밀림 방지 */
+.item {
+  position: relative;
+}
+.item-desc {
+  position: absolute;
+}

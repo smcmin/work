@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* checkbox */
+.custom input[type="checkbox"] {
+  display: none;
+}
+.custom label em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url(images/checkbox-01.png);
+  background-position: left center;
+}
+.custom input[type="checkbox"]:checked + label em {
+  background-position: right center;
+}
+
+/* radio */
+input[type="radio"] {
+  display: none;
+}
+.btn-radio label {
+    margin-right: 10px;
+}
+.btn-radio label em {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(images/radio-01.png);
+  background-position: left center;
+}
+input[id="radio1"]:checked + label[for="radio1"] em,
+input[id="radio2"]:checked + label[for="radio2"] em,
+input[id="radio3"]:checked + label[for="radio3"] em,
+input[id="radio4"]:checked + label[for="radio4"] em {
+  background-position: right center;
+}

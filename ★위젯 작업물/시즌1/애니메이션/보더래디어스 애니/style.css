@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'TheJamsil5Bold';
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.square:hover:nth-child(2) span {
+  background-color: dodgerblue;
+}
+.square:hover:nth-child(3) span {
+  background-color: pink;
+}
+.square span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 40% 60% 65% 40% / 40% 50% 60% 30%;
+  transition: 0.5s;
+}
+.square:hover span {
+  background-color: crimson;
+  border: none;
+}
+.square span:nth-child(1) {
+  animation: circle 5s linear infinite;
+}
+.square span:nth-child(2) {
+  animation: circle 3s linear infinite;
+  animation-direction: reverse;
+}
+.square span:nth-child(3) {
+  animation: circle 7s linear infinite;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.5;
+}
+.square:hover span:nth-child(2) {
+  opacity: 0.8;
+}
+.square:hover span:nth-child(3) {
+  opacity: 0.2;
+}
+.square .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.square .content p {
+  line-height: 1.5rem;
+}
+.square .content a {
+  border: 1px solid #fff;
+  border-radius: 20% 40% 60% 80%;
+  padding: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

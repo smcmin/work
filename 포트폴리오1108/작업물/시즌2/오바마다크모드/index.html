@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="profile">
+        <div class="face">
+          <img src="images/1.png" alt="img" />
+          <i class="xi-check-circle"></i>
+        </div>
+        <h1>오바마 <span>전 대통령</span></h1>
+        <p>
+          풀네임은 버락 후세인 오바마 2세이며, 이 이름 자체가 다양한 배경을
+          암시하고 있다. 버락은 스와힐리어로 "신의 축복을 받은 자" 라는 의미이며
+          후세인은 무슬림인 그의 조부 이름을 딴 것이다. 오바마라는 이름은 케냐
+          루오족의 남자 이름이다. 사족으로 그의 조부는 케냐에서 독립운동 혐의로
+          영국에서 체포되어 고문을 받아 불구가 되었고 아버지도 미국으로 유학을
+          왔을 때 외국에 유학간 케냐 인재라고 따로 명단이 만들어져 있었다.
+          <span>https://www.facebook.com/barackobama</span>
+        </p>
+        <div class="sns">
+          <div>
+            <i class="xi-instagram"></i>
+            <span><big>15.6k</big>followers</span>
+          </div>
+          <div>
+            <i class="xi-kakaostory"></i>
+            <span><big>12.9k</big>followers</span>
+          </div>
+          <div>
+            <i class="xi-twitter"></i>
+            <span><big>10.9k</big>followers</span>
+          </div>
+        </div>
+        <div class="btn-mode"></div>
+        <div class="like-more">
+          <span class="btn-like"></span>
+          <span class="btn-more">
+            <i class="xi-ellipsis-v"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".btn-mode").click(function () {
+        $(".profile").toggleClass("dark");
+      });
+
+      $(".btn-like").click(function () {
+        $(this).toggleClass("active");
+      });
+    </script>
+  </body>
+</html>

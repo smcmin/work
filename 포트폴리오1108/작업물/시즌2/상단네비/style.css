@@ -1,0 +1,75 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+  background-color: #eee;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+header {
+  background-color: #fff;
+  box-shadow: 5px 0 15px #0000001e;
+  text-align: center;
+  line-height: 70px;
+}
+nav {
+  width: 1100px;
+  margin: auto;
+}
+nav > div {
+  height: 70px;
+}
+.logo {
+  float: left;
+  width: 180px;
+}
+.logo img {
+  width: 32px;
+  height: 32px;
+  margin-top: 16px;
+}
+.gnb {
+  margin: auto;
+  width: calc(100% - 280px);
+  display: inline-block;
+}
+.gnb a {
+  margin: 0 10px;
+}
+.lnb {
+  float: right;
+  width: 100px;
+}
+.lnb a {
+  background-color: rgb(30, 188, 67);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 30px;
+}

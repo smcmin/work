@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+}
+.tab-inner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.items {
+  width: 300%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+.items div {
+  width: 33.3333%;
+  float: left;
+  height: inherit;
+  position: relative;
+}
+.btns {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+}
+.btns label {
+  width: 100px;
+  height: 10px;
+  background-color: lightgray;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* tabs */
+input[id="tab1"]:checked ~ .content .items {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .content .items {
+  left: -100%;
+}
+input[id="tab3"]:checked ~ .content .items {
+  left: -200%;
+}
+/* btn tabs */
+input[id="tab1"]:checked ~ .btns label[for="tab1"],
+input[id="tab2"]:checked ~ .btns label[for="tab2"],
+input[id="tab3"]:checked ~ .btns label[for="tab3"] {
+  background-color: crimson;
+}
+/* design */
+.items div:nth-of-type(1) {
+  background: url(images/1.jpg) no-repeat center center / cover;
+}
+.items div:nth-of-type(2) {
+  background: url(images/2.jpg) no-repeat center center / cover;
+}
+.items div:nth-of-type(3) {
+  background: url(images/3.jpg) no-repeat center center / cover;
+}
+.items div:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(213, 213, 221, 0.259),
+    rgba(0, 0, 255, 0.177)
+  );
+}
+.items div h1 {
+  padding-left: 50px;
+  font-size: 120px;
+  color: #fff;
+}

@@ -1,0 +1,75 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d8eeff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+.member {
+  width: 900px;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00000025;
+}
+.member caption {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: dodgerblue;
+}
+.member tr {
+  border-bottom: 1px solid #e3e3e3;
+}
+.member tr:last-of-type {
+  border-bottom: none;
+}
+.member th,
+.member td {
+  padding: 10px;
+  text-align: center;
+}
+.member th {
+  background-color: dodgerblue;
+  color: #fff;
+}
+.member tr td:last-of-type {
+  color: crimson;
+}
+.member tr:nth-of-type(odd) {
+  background-color: #f8f8f8;
+}
+.member tr th:first-of-type {
+  border-radius: 10px 0 0 0;
+}
+.member tr th:last-of-type {
+  border-radius: 0 10px 0 0;
+}

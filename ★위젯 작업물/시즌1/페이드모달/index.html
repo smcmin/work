@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="modal-notice" href="#none">Open fade in out modal</a>
+    <div class="modal">
+      <div class="content">
+        <a href="#none" class="btn-close">X</a>
+        <h2>Hospital Information</h2>
+        <img src="images/hospital-building.png" alt="img" />
+        <p>
+          A hospital information system (HIS) is an element of health
+          informatics that focuses mainly on the administrational needs of
+          hospitals.
+        </p>
+        <a href="#none" class="btn-more">More Info</a>
+      </div>
+    </div>
+
+    <script>
+      $(".modal-notice").click(function () {
+        $(".modal").fadeIn();
+      });
+      $(".btn-close").click(function () {
+        $(".modal").fadeOut();
+      });
+    </script>
+  </body>
+</html>

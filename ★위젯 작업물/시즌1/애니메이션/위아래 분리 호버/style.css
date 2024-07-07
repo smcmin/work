@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "TheJamsil5Bold";
+}
+body {
+  background-color: #222;
+  line-height: 1.5em;
+  margin: 0;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.items {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.item {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin: 10px;
+}
+.front {
+  background-color: #333;
+  height: inherit;
+  width: 100%;
+}
+.item:hover .front img {
+  animation: ani 1s linear infinite;
+}
+.front h2 {
+  margin-top: 0;
+}
+.front,
+.back {
+  position: absolute;
+  transition: 0.3s;
+  top: 0;
+}
+.back {
+  background-color: #fff;
+  color: #222;
+  height: inherit;
+  padding: 20px;
+  z-index: -1;
+  opacity: 0;
+}
+.back a {
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.item:hover .front {
+  top: -50%;
+}
+.item:hover .back {
+  top: 50%;
+  opacity: 1;
+}
+/* animation */
+@keyframes ani {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

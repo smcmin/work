@@ -1,0 +1,79 @@
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* FONTAWESOME */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* FONT */
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #0000001d;
+  width: 100%;
+  display: none;
+ }
+ .content {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px #00000026;
+  text-align: center;
+ }
+ .content h2 {
+  margin: 15px 0;
+ }
+ .content img {
+  width: 150px;
+  height: 150px;
+ }
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.btn-more {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  background-color: dodgerblue;
+}

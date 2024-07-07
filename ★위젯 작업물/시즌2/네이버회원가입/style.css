@@ -1,0 +1,145 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+  outline: none;
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* reset css */
+input,
+select {
+  cursor: pointer;
+}
+/* design */
+.member {
+  width: 460px;
+  /* padding: 0 20px; */
+  margin: auto;
+}
+.member .logo {
+  height: 30px;
+  display: block;
+  margin: 50px auto;
+}
+.field {
+  margin: 10px 0;
+}
+.field b {
+  display: block;
+  margin-bottom: 5px;
+}
+.member input:not(input[type="radio"]),
+.field select {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+}
+.member input:not(input[type="radio"]):focus,
+.field select:focus {
+  border: 1px solid #2db400;
+}
+.member input[type="button"],
+.member input[type="submit"] {
+  color: #fff;
+  background-color: #2db400;
+  border: none;
+}
+.field.birth div {
+  display: flex;
+  gap: 10px;
+}
+.field.tel div {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.field.tel div input:nth-of-type(1) {
+  flex: 2;
+}
+.field.tel div input:nth-of-type(2) {
+  flex: 1;
+}
+.field.gender div {
+  border: 1px solid #dadada;
+  padding: 14px 4px;
+  background-color: #fff;
+}
+.text-email {
+  display: block;
+  position: relative;
+}
+.text-email::before {
+  content: "@naver.com";
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  pointer-events: none;
+}
+.user-pw {
+  background: #fff url(images/icon-01.png) no-repeat right 10px center;
+  background-size: 20px;
+}
+.user-pw-confirm {
+  background: #fff url(images/icon-02.png) no-repeat right 10px center;
+  background-size: 20px;
+}
+.member-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.member-footer a::before {
+  content: "|";
+  margin-right: 5px;
+  padding-left: 5px;
+}
+.member-footer a:first-of-type:before {
+  display: none;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #2db400;
+}
+/* custom select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(images/icon-select.png) no-repeat right 20px center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

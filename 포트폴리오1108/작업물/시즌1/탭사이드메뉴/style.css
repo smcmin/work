@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  font-family: "TheJamsil5Bold";
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* trigger button */
+input[id="trigger"] {
+  display: none;
+}
+label[for="trigger"] {
+  width: 40px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+label[for="trigger"] span {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  left: 0;
+  transition: 0.3s;
+}
+label[for="trigger"] span:nth-of-type(1) {
+  top: 0;
+}
+label[for="trigger"] span:nth-of-type(2) {
+  top: 50%;
+}
+label[for="trigger"] span:nth-of-type(3) {
+  top: 100%;
+}
+input[id="trigger"]:checked + label[for="trigger"] span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+input[id="trigger"]:checked + label[for="trigger"] span:nth-of-type(2) {
+    opacity: 0;
+}
+input[id="trigger"]:checked + label[for="trigger"] span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+/* side bar */
+.sidebar {
+    background-color: #000;
+    width: 100%;
+    height: 300px;
+    top: -100%;
+    position: fixed;
+    transition: 0.3s;
+}
+input[id=trigger]:checked ~ .sidebar {
+    top: 0;
+}
+input[id=trigger]:checked + label[for=trigger] {
+    top: 360px;
+}

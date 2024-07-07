@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "TheJamsil5Bold";
+
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tab-inner {
+  height: 500px;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.tabs {
+  width: 800px;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+.items {
+  width: 2400px;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.items div {
+  width: 800px;
+  height: 400px;
+  float: left;
+}
+.btn {
+  text-align: center;
+}
+.btn label {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+/* tab */
+input[id="tab1"]:checked ~ .tabs .items {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .tabs .items {
+  left: -800px;
+}
+input[id="tab3"]:checked ~ .tabs .items {
+  left: -1600px;
+}
+/* btn */
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background-color: crimson;
+}
+/* design */
+h1,
+.items div {
+  text-align: center;
+}
+.items div {
+  padding: 20px;
+}
+.items div img {
+  width: 230px;
+  height: 300px;
+  border-radius: 50%;
+}

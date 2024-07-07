@@ -1,0 +1,181 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+.login {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #0000001f;
+  padding: 40px;
+}
+.login h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.login .field {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+input[type="email"] {
+  background: url(images/icon-user.png) no-repeat center left;
+}
+input[type="password"] {
+  background: url(images/icon-password.png) no-repeat center left;
+}
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  transition: 0.3s;
+}
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+  opacity: 0;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1px solid #000;
+}
+.save-info {
+  margin: 30px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.save-info label {
+  float: left;
+}
+.save-info a {
+  float: right;
+}
+.event-info {
+  text-align: center;
+}
+.event-info label {
+  margin: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.login input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px 0;
+  background-color: skyblue;
+  font-weight: bold;
+}
+.sns-info {
+  text-align: center;
+}
+.sns {
+  margin: 10px 0;
+}
+.sns a i {
+  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  line-height: 45px;
+  color: #fff;
+  margin: 5px;
+  transition: 0.3s;
+}
+.sns a:hover i {
+  transform: rotateY(360deg);
+}
+.sns a:nth-of-type(1) i {
+  background-color: #dd4b39;
+}
+.sns a:nth-of-type(2) i {
+  background-color: #3b5999;
+}
+.sns a:nth-of-type(3) i {
+  background-color: #25d366;
+}
+.sns a:nth-of-type(4) i {
+  background-color: rgb(255, 244, 45);
+}
+.signup-info {
+  text-align: center;
+}
+.signup-info span {
+  display: block;
+}
+.signup-info a {
+  font-weight: bold;
+  font-size: 14px;
+}
+.signup-info a:hover {
+  text-decoration: underline;
+}
+/* custom chk, radio */
+.login input[id="save-email"] {
+  display: none;
+}
+.login input[id="save-email"] + em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(images/icon-checkbox.png) no-repeat center left;
+  transform: translateY(3px);
+}
+.login input[id="save-email"]:checked + em {
+  background-position: right;
+}
+.login input[name="event"] {
+  display: none;
+}
+.login input[name="event"] + em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(images/icon-radio.png) no-repeat center left;
+  transform: translateY(3px);
+}
+.login input[name="event"]:checked + em {
+  background-position: right;
+}

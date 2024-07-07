@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>호버시 설명 나타나는 애니</title>
+    <style>
+      @font-face {
+        font-family: "TheJamsil5Bold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "TheJamsil5Bold";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .items {
+        display: inline-block;
+        text-align: center;
+      }
+      .item {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 0 20px;
+      }
+      .item img {
+        width: inherit;
+        height: inherit;
+      }
+      .caption {
+        width: inherit;
+        height: inherit;
+        background-color: #000000a4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        padding-top: 60px;
+        color: #fff;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .caption a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px;
+        margin-top: 10px;
+        background-color: #000;
+        border-radius: 6px;
+      }
+      .item:hover .caption {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item">
+        <img src="images/1.png" alt="상품사진" />
+        <div class="caption">
+          <h2>3컬러 비죠 컷팅 데님팬츠</h2>
+          <p>43,900원</p>
+          <p>허리 라인 2개의 비죠 버튼과 무릎 커팅이 매력적인 와이드팬츠</p>
+          <a href="#none">View detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="item">
+        <img src="images/2.png" alt="상품사진" />
+        <div class="caption">
+          <h2>6버튼 워싱 비죠 데님팬츠</h2>
+          <p>47,800원</p>
+          <p>빈티지한 워싱 색감이 데님의 무드를 잘 살려준 데님 팬츠</p>
+          <a href="#none">View detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="item">
+        <img src="images/3.png" alt="상품사진" />
+        <div class="caption">
+          <h2>리치 코튼 숏팬츠</h2>
+          <p>22,900원</p>
+          <p>유행타지 않는 기본 디자인이라 편하게 입기 좋은 반바지</p>
+          <a href="#none">View detail</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

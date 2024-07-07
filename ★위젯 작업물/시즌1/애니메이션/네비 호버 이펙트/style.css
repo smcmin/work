@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+  font-size: 46px;
+}
+.gnb a {
+  display: block;
+  margin-top: 16px;
+}
+.gnb .one,
+.gnb .two,
+.gnb .three {
+  position: relative;
+}
+.gnb .one::before,
+.gnb .two::before,
+.gnb .three::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: crimson;
+  bottom: -5px;
+  left: 0;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.gnb .one:hover::before {
+  left: 100%;
+}
+.gnb .two::before {
+  content: "";
+  left: 50%;
+  bottom: -10px;
+  border-radius: 6px;
+}
+.gnb .two:hover::before {
+  width: 100%;
+  left: 0;
+}
+.gnb .three::before {
+  content: "";
+  bottom: -15px;
+  border-radius: 6px;
+}
+.gnb .three:hover::before {
+  width: 100%;
+}

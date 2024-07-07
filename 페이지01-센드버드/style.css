@@ -1,0 +1,518 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* reset css */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+button,
+input {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* default css */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+/* 공통 common css */
+div[class*="inner"] {
+  width: 1300px;
+  margin: auto;
+}
+.headline-share {
+  text-align: center;
+  letter-spacing: -1px;
+}
+.headline-share em {
+  position: relative;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.headline-share em::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, rgb(154, 42, 164), rgb(228, 94, 231));
+  height: 5px;
+  width: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headline-share p {
+  padding-top: 20px;
+}
+/* 공통 패딩 추가 */
+.feature,
+.faq,
+.focus,
+.news {
+  padding: 100px 0;
+}
+/* scroll header color change */
+header.active {
+  background-color: #00000093;
+  transition: 0.3s;
+}
+/* header @@@@@@@@@@@@@@@@@@@@@ */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-inner {
+  margin: auto;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.logo {
+  float: left;
+}
+.gnb {
+  float: right;
+}
+.gnb a {
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+/* welcome @@@@@@@@@@@@@@@@@@@@@ */
+.welcome {
+  position: relative;
+}
+.main-img-area {
+  background: url("images/main/main.png") no-repeat center center / cover;
+  height: 90vh;
+  width: 100%;
+}
+.welcome-heading {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+}
+.welcome-heading span {
+  font-size: 15px;
+}
+.welcome-heading h1 {
+  font-size: 34px;
+}
+.welcome-heading em {
+  color: red;
+  font-style: normal;
+}
+.welcome-heading p {
+  font-size: 16px;
+}
+/* mouse wheele */
+.mouse {
+  border: 1px solid #fff;
+  position: absolute;
+  width: 32px;
+  height: 45px;
+  border-radius: 30px;
+  bottom: 100px;
+  left: 400px;
+}
+.wheele {
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  top: 10px;
+  left: 14px;
+  animation: wheele 1s linear infinite;
+}
+@keyframes wheele {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+/* comunity-apps @@@@@@@@@@@@@@@@@@@@@ */
+.comunity-content {
+  overflow: hidden;
+  padding: 60px;
+}
+.comunity-content > div {
+  float: left;
+  width: 50%;
+}
+.comunity-left {
+  letter-spacing: -1px;
+  text-align: center;
+}
+.comunity-left h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(58, 191, 191);
+}
+.comunity-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* feature @@@@@@@@@@@@@@@@@@@@@ */
+.feature-content {
+  overflow: hidden;
+  margin: 50px 0;
+}
+.feature-content > div {
+  float: left;
+  width: 50%;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-about {
+  padding: 40px;
+  padding-top: 80px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.feature-about em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+}
+.feature-about ul li {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.feature-about ul li:before {
+  content: "·";
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+/* faq @@@@@@@@@@@@@@@@@@@@@ */
+.faq-content {
+  overflow: hidden;
+}
+.faq-content > div {
+  float: left;
+  width: 50%;
+  padding: 25px;
+}
+.faq-content > div:last-child {
+  padding: 0;
+}
+.faq-img img {
+  width: 100%;
+}
+/* faq accordion */
+.faq-item {
+  /* border: 1px solid skyblue; */
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.faq-item.active {
+  border: 1px solid skyblue;
+}
+.faq-item.active .faq-title::after {
+  transform: rotate(90deg);
+  color: rgb(49, 163, 207);
+}
+.faq-item > div {
+  padding: 15px;
+}
+.faq-title {
+  color: rgb(49, 163, 207);
+  cursor: pointer;
+  font-weight: bold;
+}
+.faq-title::after {
+  content: "\f105";
+  font-family: fontawesome;
+  float: right;
+  color: #333;
+  transition: 0.3s;
+}
+.faq-desc {
+  display: none;
+}
+/* review @@@@@@@@@@@@@@@@@@@@@ */
+.review {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+.review-content {
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+.slogan {
+  font-size: 26px;
+}
+.review-slider {
+  margin-top: 60px;
+}
+.review-slider div p {
+  padding: 0 70px;
+}
+.review-slider p:last-child {
+  font-weight: bold;
+}
+/* slick slider review custom css */
+.slick-dots li button:before {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 60px;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  top: 0;
+  left: 0;
+}
+.slick-prev:before {
+  background: url("images/icon/prev.png") no-repeat;
+}
+.slick-next:before {
+  background: url("images/icon/next.png") no-repeat;
+}
+/* focus @@@@@@@@@@@@@@@@@@@@@ */
+.focus-content {
+  text-align: center;
+  overflow: hidden;
+}
+.focus-item {
+  float: left;
+  width: 50%;
+  padding: 100px 50px 0;
+}
+.focus-item img {
+  width: 150px;
+  height: 150px;
+}
+.focus-item h3 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.focus-item p {
+  letter-spacing: -1px;
+}
+/* news @@@@@@@@@@@@@@@@@@@@@ */
+.news {
+  background-color: #f9f9f9;
+}
+.news-content {
+  overflow: hidden;
+}
+.news-content > div {
+  float: left;
+  width: 50%;
+}
+.btn-readmore {
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  display: block;
+  width: 180px;
+  margin: auto;
+}
+/* news left */
+.date {
+  display: block;
+  text-align: right;
+}
+.news-content {
+  padding: 100px 0;
+}
+.news-big {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  cursor: pointer;
+}
+.news-big img {
+  width: inherit;
+  height: inherit;
+}
+.news-headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+.news-headline h4 {
+  font-size: 24px;
+}
+/* news right */
+.news-items > div {
+  display: inline-block;
+  margin: 0 5px;
+}
+.news-items {
+  margin-bottom: 70px;
+}
+.news-thum {
+  width: 290px;
+  cursor: pointer;
+}
+.news-photo {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.news-photo img {
+  display: block;
+  transition: 0.3s;
+}
+.news-thum p {
+  margin-top: 0;
+}
+.badge {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  bottom: 0;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.badge.new {
+  background-color: #000;
+}
+.badge.hot {
+  background-color: crimson;
+}
+/* hover 확대 */
+.news-thum:hover img {
+  transform: scale(1.1);
+}
+/* footer @@@@@@@@@@@@@@@@@@@@@ */
+footer {
+  background-color: #572793;
+  color: #fff;
+  font-size: 14px;
+  padding: 60px 0;
+}
+.footer-content {
+  overflow: hidden;
+}
+.footer-content > div {
+  float: left;
+}
+.footer-logo {
+  width: 15%;
+}
+.copyright {
+  width: 85%;
+  overflow: hidden;
+}
+.policy-sns {
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+}
+.policy {
+  float: left;
+}
+.policy span:first-child a {
+  color: #fff;
+}
+.policy span:first-child em {
+  font-style: normal;
+  margin: 10px;
+}
+.policy span:last-child {
+  display: block;
+}
+.sns {
+  float: right;
+}
+.sns i {
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: #3a1568;
+  transition: 0.3s;
+}
+.sns i:hover {
+  background-color: #fff;
+  color: #3a1568;
+}
+.adress {
+  padding-top: 30px;
+}
+.adress span {
+  display: block;
+}

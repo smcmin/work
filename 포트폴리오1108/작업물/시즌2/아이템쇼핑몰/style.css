@@ -1,0 +1,117 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "SUITE-Regular";
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* design */
+h1 {
+  font-size: 66px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item-inner {
+  width: 1300px;
+  margin: auto;
+}
+.items {
+  counter-reset: item;
+}
+.item {
+  display: inline-block;
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+}
+.item:hover::before {
+  background-color: crimson;
+}
+.item::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: gray;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 10;
+}
+.photo {
+  position: relative;
+  height: 400px;
+}
+.photo a img {
+  width: 100%;
+  position: absolute;
+  transition: 0.3s;
+  left: 0;
+  top: 0;
+}
+.photo:hover a img:first-of-type {
+  opacity: 0;
+}
+.photo a img:first-of-type {
+  z-index: 1;
+}
+.detail {
+  position: relative;
+}
+.detail span {
+  display: block;
+}
+.detail .price b {
+  color: crimson;
+  margin-right: 5px;
+}
+.detail .name {
+  font-weight: 600;
+}
+.detail .count {
+  color: #777;
+}
+.detail .like {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 5px;
+}
+.detail .like:before {
+  content: "\f08a";
+  font-family: fontawesome;
+  font-size: 18px;
+}
+.detail .like.active::before {
+  content: "\f004";
+  color: crimson;
+}

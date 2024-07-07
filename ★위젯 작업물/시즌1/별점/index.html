@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="star-rating">
+      <div class="star">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <div class="print">
+        별점 주세요!
+      </div>
+    </div>
+
+    <script>
+      $('.star .fa').click(function(){
+        $(this).addClass('active')
+        $(this).prevAll().addClass('active')
+        $(this).nextAll().removeClass('active')
+
+        var num = $(this).index()
+        var starrate = num + 1
+        $('.print').text(starrate)
+
+        if(starrate == 1) {
+          $('.print').text('별로예요')
+        }
+        else if(starrate == 2) {
+          $('.print').text('조금 별로예요')
+        }
+        else if(starrate == 3) {
+          $('.print').text('그냥 그래요')
+        }
+        else if(starrate == 4) {
+          $('.print').text('좋아요')
+        }
+        else {
+          $('.print').text('완전 좋아요')
+        }
+      })
+    </script>
+  </body>
+</html>
